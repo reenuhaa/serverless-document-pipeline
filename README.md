@@ -301,5 +301,17 @@ src/
   common/     structured logging, DynamoDB job store (idempotent writes)
 tests/        pytest suite (moto-mocked AWS)
 template.yaml SAM infrastructure-as-code
+## Credits & Acknowledgments
+* Base serverless backend architecture and AWS SAM templates provided by [@hishamissa](https://github.com).
+* Frontend static UI expansion and end-to-end cloud deployment implemented by [@reenuhaa](https://github.com).
 scripts/      teardown script
 ```
+## Credits & Acknowledgments
+
+This repository is a full-stack expansion of an existing open-source serverless blueprint. 
+
+- **Core Backend Infrastructure:** The event-driven processing pipeline architecture, AWS Lambda function logic, Amazon SQS queue configurations, and AWS SAM deployment templates (`template.yaml`) were originally designed and authored by [@hishamissa](https://github.com) in the [serverless-document-pipeline](https://github.com/serverless-document-pipeline) repository.
+- **Frontend Integration & Deployment:** Expanded the standalone backend into an end-to-end full-stack solution by leveraging GitHub Copilot to implement a user-facing HTML ingestion interface, hosted independently via **Amazon S3 Static Website Hosting** by [@reenuhaa](https://github.com).
+
+---
+*Note: This project was forked and deployed for professional development, architectural study, and hands-on integration testing under the global GitHub Terms of Service for public repositories.*
